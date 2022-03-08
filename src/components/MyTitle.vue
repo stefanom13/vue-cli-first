@@ -1,15 +1,24 @@
 <template>
-  <div>
-      <h2>La mia prima app con Vue CLI!</h2>
+  <div class="title">
+      <h2>{{title}}</h2>
   </div>
 </template>
 
 <script>
 export default {
-    name:"MyTitle",
+    // name:"MyTitle",
+    data ( ) {
+      return {
+        title:'La mia prima app con Vue CLI!'
+      }
+    }
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+
+.title{
+ color: rebeccapurple;
+}
 
 </style>
